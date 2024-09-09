@@ -1,0 +1,41 @@
+hr {
+    border: dotted #000000 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+body {
+    color: #40514e;
+    margin: 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+}
+
+:host, :root {
+    --rem: 16;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #c8ff00, #4cc0ff, #83ef72);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
